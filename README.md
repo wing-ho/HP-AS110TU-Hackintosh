@@ -2,6 +2,7 @@
 这是我使用的HP as110tu的Clover引导文件和驱动，完美程度99%了，还剩下电量显示相差6%左右的问题。
 
 著名的hackintosh论坛tonymacx86上的一个名为[7500U HD620 UHD laptop black screen after wake from sleep or display turned off](https://www.tonymacx86.com/threads/7500u-hd620-uhd-laptop-black-screen-after-wake-from-sleep-or-display-turned-off.214664/)的帖子开启了我的黑苹果之路，配置完善的过程主要是参考了黑果小兵的在github上的配置文件。
+
 | 硬件     | 说明                                                                                       |
 |----------|--------------------------------------------------------------------------------------------|
 | 电脑型号 | HP ENVY - 15-as110tu                                                                       |
