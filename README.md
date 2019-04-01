@@ -6,7 +6,7 @@
 | 硬件     | 说明                                                                                       |
 |----------|--------------------------------------------------------------------------------------------|
 | 电脑型号 | HP ENVY - 15-as110tu                                                                       |
-| 操作系统 | macOS Mojave 10.14.4 18E226/macOS∏High Sierra 10.13.6 17G2208                              |
+| 操作系统 | macOS Mojave 10.14.4 18E226/macOS High Sierra 10.13.6 17G2208                              |
 | CPU      | i7-7500U(Kaby Lake)                                                                        |
 | 显示屏   | LG 15.6" diagonal UHD IPS UWVA multitouch-enabled edge-to-edge glass (3840 x 2160)         |
 | 核显     | Intel® HD Graphics 620                                                                     |
@@ -41,7 +41,8 @@
 |----------------------------|---------------------------------------------------------------------------------------------------------------|
 | ACPIBatteryManager.kext    | 电源驱动，用于正常显示电量                                                                                    |
 | AirportBrcmFixup.kext      | 无线网卡驱动，在config.plist启动参数中添加brcmfx-country=(US,CN,#a)更改国家代码                               |
-| ApplePS2SmartTouchPad.kext | 键盘，触摸板和鼠标驱动，自己对驱动进行的定制，更接近白苹果的操作体验                                          |
+| ApplePS2SmartTouchPad.kext | 键盘，触摸板和鼠标驱动，支持对驱动进行定制，操作体验更接近白苹果，但有Bug，睡醒后鼠标左键变右键               |
+| VoodooPS2Controller.kext   | 通用键盘，触摸板和鼠标驱动，功能虽少，但使用很稳定                                                             |
 | BrcmFirmwareData.kext      | 配合BrcmPatchRAM2.kext驱动蓝牙                                                                                |
 | BrcmPatchRAM2.kext         | 如果卡在Fail to write to pulk pipe，需要添加启动参数dart=0以及Drop掉DMAR表，这个与VT-d虚拟技术有关。          |
 | FakeSMC.kext               | 黑苹果必备                                                                                                    |
