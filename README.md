@@ -1,5 +1,7 @@
 # HP ENVY - 15-as110tu for macOS Mojave/High Sierra
-这是我使用的HP as110tu的Clover引导文件和驱动，完美程度99%了，还剩下电量显示相差6%左右的问题。
+这是我使用的HP as110tu的Clover引导文件和驱动，完美程度99%了，目前还存在的问题：
+* 可能电池有损耗，电量显示相差6%。
+* 需要播放影音文件，有音频输出的时候，耳机插入才能识别。
 
 著名的hackintosh论坛tonymacx86上的一个名为[7500U HD620 UHD laptop black screen after wake from sleep or display turned off](https://www.tonymacx86.com/threads/7500u-hd620-uhd-laptop-black-screen-after-wake-from-sleep-or-display-turned-off.214664/)的帖子开启了我的黑苹果之路，配置完善的过程主要是参考了黑果小兵的在github上的配置文件。
 
@@ -42,7 +44,7 @@
 | ACPIBatteryManager.kext    | 电源驱动，用于正常显示电量                                                                                    |
 | AirportBrcmFixup.kext      | 无线网卡驱动，在config.plist启动参数中添加brcmfx-country=(US,CN,#a)更改国家代码                               |
 | ApplePS2SmartTouchPad.kext | 键盘，触摸板和鼠标驱动，支持对驱动进行定制，操作体验更接近白苹果，但有Bug，睡醒后鼠标左键变右键               |
-| VoodooPS2Controller.kext   | 通用键盘，触摸板和鼠标驱动，功能虽少，但使用很稳定                                                             |
+| VoodooPS2Controller.kext   | 通用键盘，触摸板和鼠标驱动，功能虽少，但使用很稳定                                                            |
 | BrcmFirmwareData.kext      | 配合BrcmPatchRAM2.kext驱动蓝牙                                                                                |
 | BrcmPatchRAM2.kext         | 如果卡在Fail to write to pulk pipe，需要添加启动参数dart=0以及Drop掉DMAR表，这个与VT-d虚拟技术有关。          |
 | FakeSMC.kext               | 黑苹果必备                                                                                                    |
