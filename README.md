@@ -1,7 +1,6 @@
 # HP ENVY - 15-as110tu for macOS Catalina 10.15.1/macOS Mojave 10.14.4/macOS High Sierra 10.13.6 
 这是我使用的HP as110tu的Clover引导文件和驱动，完美程度99%了，目前还存在的问题：
 * 可能电池有损耗，电量显示相差6%。
-* 用AppleHDA Patcher给AppleHDA.kext打补丁的话，播放影音文件，有音频输出的时候，耳机插入才能识别。
 
 著名的hackintosh论坛tonymacx86上的一个名为[7500U HD620 UHD laptop black screen after wake from sleep or display turned off](https://www.tonymacx86.com/threads/7500u-hd620-uhd-laptop-black-screen-after-wake-from-sleep-or-display-turned-off.214664/)的帖子开启了我的黑苹果之路，配置完善的过程主要是参考了黑果小兵的在github上的配置文件。
 
@@ -63,14 +62,13 @@
 | CPUFriend.kext             | CPU变频驱动                                                                                                   |
 | CPUFriendDataProvider.kext | i7-7500U的CPU变频数据                                                                                         |
 | HWPEnabler.kext            | Intel Speed Shift Technology                                                                                  |
-| HDAEnabler.kext            | AppleHDA Patcher生成的补丁，另外打过补丁的AppleHDA.kext需要复制到S/L/E中覆盖原来的驱动                        |
 | HoRNDIS.kext               | Android USB共享网络                                                                                           |
 | NoTouchID.kext             | 禁止TouchID 的检测                                                                                           |
 
 ## 更新说明
 2019-11-15
 * 更新无线网卡、AppleALC.kext、Lilu.kext以及WhateverGreen.kext等驱动以适配最新版macOS Catalina
-
+* 用AppleHDA Patcher给AppleHDA.kext打补丁，生成的三个补丁拖到Kext Utility中安装，音频就能正常驱动。
 ## 参考文章
 1. [Dell Inspiron 7000 Clover配置文件](https://github.com/daliansky/dell7000)
 2. [Dell-3443黑苹果配置文件](https://github.com/kkzzhizhou/Dell-3443-Hackintosh)
